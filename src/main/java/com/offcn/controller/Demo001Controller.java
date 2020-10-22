@@ -24,6 +24,7 @@ public class Demo001Controller {
         map.put("src2","20.jpg");
         map.put("src3","21.jpg");
         model.addAttribute("src",map);
+        System.out.println("555555////////");
         return "index2";
     }
     @RequestMapping("/getUserList")
