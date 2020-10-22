@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+这里是页面
+<h1 th:if="${result=='y'}">廖思翔今天刷厕所</h1>
+<p th:switch="${menu}">
+    <span th:case="admin">廖思翔厕所管理员</span>
+    <span th:case="${manager}">廖思翔厕所所长</span>
+
+</p>
+</body>
+</html>

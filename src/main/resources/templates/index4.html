@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+这里是页面
+<h1 th:text="${username}"></h1>
+<input type="text" name="name" th:value="${username}">
+<!--字符串的拼接-->
+<span th:text="'娃哈哈 '+${username}+' 哈哈哈'"></span>
+<!--字符串-->
+<span th:text="|哇哈哈哈:${username}|"></span>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>这里是页面</h1><br>
+<h2>时间的格式化:
+<span th:text="${#date.format(date,'yyyy-MM-dd HH:mm:ss')}"></span>
+</h2><br>
+<p th:text="${#string.abbreviate(str,20)}"></p><br>
+<!--字符串判空处理-->
+<span th:text="${!#string.isEmpty(str2)}"></span>
+<br>
+<!--截取-->
+<span th:text="${#string.substring(str2,0,3)}"></span>
+</body>
+</html>

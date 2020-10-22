@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<link rel="stylesheet" href="../static/css/pages-cart.css">
+<link rel="stylesheet"  th:href="@{/css/pages-cart.css}" />
+<body>
+<!--include-->
+<div th:include="~{head :: head}">
+    登录&nbsp;  注册
+</div>
+<!--insert-->
+<div th:insert="~{head :: head}">
+    登录&nbsp;  注册
+</div>
+<!--replace-->
+<div th:replace="~{head :: head}">
+    登录&nbsp;  注册
+</div>
+这里是页面
+<h1 th:text="${message}"></h1>
+</body>
+</html>

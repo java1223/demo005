@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>这里是页面</h1><br>
+<!--<span th:text="${user.id}"></span><br>
+<span th:text="${user.name}"></span><br>
+<span th:text="${user.age}"></span><br>
+<img th:src="${src.src1}" alt=""><br>
+<img th:src="${src.src2}" alt=""><br>
+<img th:src="${src.src3}" alt=""><br>
+<h1 th:text="${message}"></h1>-->
+
+<table width="300px" style="text-align: center">
+    <tr>
+        <td>序号</td>
+        <td>用户的id</td>
+        <td>用户的名字</td>
+        <td>用户的年龄</td>
+
+    </tr>
+    <tr th:each="user,start:${userList}">
+        <td th:text="${start.count}"></td>
+        <!--<td th:text="${Start.index+1}"></td>-->
+       <!-- <td th:text="${start.size}"></td>-->
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.age}"></td>
+    </tr>
+</table>
+</body>
+</html>
